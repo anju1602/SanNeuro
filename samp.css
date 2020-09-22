@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800');
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800|Poppins&display=swap');
+
+*{
+
+  padding: 0;
+
+  margin: 0;
+
+  text-decoration: none;
+
+  list-style: none;
+
+  box-sizing: border-box;
+
+}
+
+body{
+
+  font-family: montserrat;
+  //display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  //padding: 40px;
+background:darkblue;
+}
+nav{
+
+ // background-image:linear-gradient(160deg,black,#99ffcc);
+
+//background:#33FFCC;
+background:#000099;
+  //background-image:linear-gradient(130deg,#FFFF00,#66FF99);
+
+  height: 80px;
+
+  width: 100%;
+
+}
+            
+label.logo{
+
+  color: black;
+
+  font-size: 35px;
+
+  line-height: 80px;
+
+  padding: 0 100px;
+
+  font-weight: bold;
+
+}
+
+label.logo .a:hover{
+background: white;
+
+  transition: .5s;
+
+}
+nav ul{
+
+  float: right;
+
+  margin-right: 20px;
+
+
+}
+
+nav ul li{
+
+  display: inline-block;
+
+  line-height: 80px;
+
+  margin: 0 5px;
+
+}
+
+nav ul li a{
+
+  color:black;
+
+  font-size: 17px;
+
+  padding: 7px 13px;
+
+  border-radius: 3px;
+
+  text-transform: uppercase;
+
+  font-weight: bold;
+
+}
+
+.a:hover{
+
+  background: #1b9bff;
+
+  transition: .5s;
+
+}
+
+.checkbtn{
+
+  font-size: 30px;
+
+  color: black;
+
+  float: right;
+
+  line-height: 80px;
+
+  margin-right: 40px;
+
+  cursor: pointer;
+
+  display: none;
+
+backgrond:black;
+}
+#check{
+
+  display: none;
+
+}
+
+@media (max-width: 952px){
+
+  label.logo{
+
+    font-size: 30px;
+
+    padding-left: 50px;
+
+  }
+
+  nav ul li a{
+
+    font-size: 16px;
+
+  }
+}
+
+@media (max-width: 858px){
+
+  .checkbtn{
+
+    display: block;
+
+  }
+
+  ul{
+
+    position: fixed;
+
+    width: 100%;
+
+    height: 100vh;
+
+    top: 80px;
+
+    left: -100%;
+
+    text-align: center;
+
+    transition: all .5s;
+
+    background-color:black;
+
+  }
+
+  nav ul li{
+
+    display: block;
+
+    margin: 50px 0;
+
+    line-height: 30px;
+
+  }
+
+  nav ul li a{
+
+    font-size: 20px;
+
+    color:white;
+
+  }
+
+  a:hover,a.active{
+
+    background: none;
+
+    color: #0082e6;
+  
+}
+
+  #check:checked ~ ul{
+
+    left: 0;
+
+  }
+
+
+}
+
+section{
+background:url(background.jpg) no-repeat;
+
+    background-size: cover;
+
+    height:calc(100vh);
+    align:center;
+}
+/*CONTACT US*/
+.form{
+width:85%;
+max-width:600px;
+background:white;
+position:abolute;
+top:50%;
+left:50%;
+padding:30px 40px;
+box-sizing:border-box;
+border-radius:10px;
+text-align:center;
+margin:auto;
+font-family:"Montserrat",sans-serif;
+background-image:linear-gradient(#4da6ff,#000066);
+border:2px solid black;
+}
+.form h1{
+margin-top:0;
+font-weight:200px;
+}
+.text{
+border:2px solid black;
+margin:8px 0;
+padding:10px 18px;
+border-radius:10px;
+//background-image:linear-gradient(red,yellow);
+background-image:linear-gradient(#4da6ff,#000066);
+}
+.text label{
+display:block;
+text-align:left;
+color:black;
+text-transform:uppercase;
+font-size:15px;
+font-weight:bold;
+
+}
+.text input, .text textarea{
+width:100%;
+border:none;
+background:none;
+outline:none;
+font-size:17px;
+margin-top:5px;
+}
+.btn{
+display:inline-block;
+background-image:linear-gradient(#4da6ff,#000066);
+padding:14px 0;
+color:white;
+text-transform:uppercase;
+cursor:pointer;
+margin-top:8px;
+width:100%;
+border-radius:10px;
+letter-spacing: 2px;
+font-weight:bold;
+border:2px solid black;
+}
+.btn:hover{
+background-image:linear-gradient(#000066,#4da6ff);
+color:white;
+}
+
+/*SERVICE*/
+*{
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: 'Montserrat',sans-serif;
+
+}
+
+.cards{
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  text-align: center;
+
+  padding: 30px;
+
+
+color:white;  
+}
+
+.cards h1{
+
+  font-size: 40px;
+
+  margin: 0 0 30px 0;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+}
+
+.services{
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+.content{
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  flex: 1;
+
+  margin: 20px;
+
+  padding: 20px;
+
+  border: 2px solid black;
+
+  border-radius: 5px;
+
+  transition: all .3s ease;
+
+  background-image:linear-gradient(#4da6ff,#000066);
+}
+
+.content > *{
+
+  flex: 1 1 100%;
+
+}
+
+.content:hover{
+
+  color: white;
+
+  border-radius:10px;
+  background-image:linear-gradient(#000066,#4da6ff);
+}
+
+.content:hover a{
+
+  
+background-image:linear-gradient(#000066,#4da6ff);
+}
+.content h2{
+
+  font-size: 30px;
+
+  margin: 16px 0;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+}
+
+.content p{
+
+  font-size: 17px;
+
+  font-family: 'Poppins',sans-serif;
+
+}
+
+.content a{
+
+  margin: 22px 0;
+
+  background-image:linear-gradient(#4da6ff,#000066);
+
+  color: black;
+
+  font-weight:bold;
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+  border: 1px solid black;
+
+  padding: 15px 0;
+
+  border-radius: 25px;
+
+  transition: .3s ease;
+
+}
+
+@media (max-width: 900px) {
+
+  .services{
+
+    display: flex;
+
+    flex-direction: column;
+ }
+
+}
+
+
+/*Book Appointment*/
+.form-1{
+width:85%;
+max-width:600px;
+background:white;
+position:abolute;
+top:50%;
+left:50%;
+padding:30px 40px;
+box-sizing:border-box;
+border-radius:10px;
+text-align:center;
+margin:auto;
+font-family:"Montserrat",sans-serif;
+background-image:linear-gradient(#0276FD,#63B8FF);
+border:2px solid black;
+}
+.form-1 h1{
+margin-top:0;
+font-weight:200px;
+}
+.text1{
+border:2px solid black;
+margin:8px 0;
+padding:10px 18px;
+border-radius:10px;
+background-image:linear-gradient(#0276FD,#63B8FF);
+}
+.text1 label{
+display:block;
+text-align:left;
+color:black;
+text-transform:uppercase;
+font-size:15px;
+font-weight:bold;
+
+}
+.text1 input, .text1 textarea{
+width:100%;
+border:none;
+background:none;
+outline:none;
+font-size:17px;
+margin-top:5px;
+}
+.btn1{
+display:inline-block;
+background-image:linear-gradient(#0276FD,#63B8FF);
+padding:14px 0;
+color:white;
+text-transform:uppercase;
+cursor:pointer;
+margin-top:8px;
+width:100%;
+border-radius:10px;
+letter-spacing: 2px;
+font-weight:bold;
+border:2px solid black;
+}
+.btn1:hover{
+background-image:linear-gradient(#63B8FF,#0276FD);
+color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
